@@ -13,6 +13,11 @@ public abstract class Robot {
         this.name = name;
     }
     
+    /**
+     * So sánh robot dựa trên name.
+     * @param obj là đối tượng để so sánh
+     * @return true nếu cùng tên hoặc đối tượng
+     */
     public boolean equals(Object obj) {
         if (this == obj) return true;
         
