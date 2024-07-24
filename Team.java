@@ -5,6 +5,10 @@ public class Team {
     protected String name;
     private List<Robot> robotList = new ArrayList<>();
 
+    public Team(String name) {
+        this.name = name;
+    }
+    
     public void addRobot(Robot robot) {
         robotList.add(robot);
     }
