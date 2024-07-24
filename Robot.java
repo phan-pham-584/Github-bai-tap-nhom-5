@@ -13,7 +13,13 @@ public abstract class Robot {
         this.name = name;
     }
     
-    public boolean equals(Robot r) {
-        return this.name.equals(r.getName());
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        
+        if (obj == null || getClass() != obj.getClass()) return false;
+        
+        Robot robot = (Robot) obj;
+        
+        return name.equals(robot.getName());
     }
 }
