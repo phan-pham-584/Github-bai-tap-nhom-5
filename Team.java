@@ -5,6 +5,10 @@ public class Team {
     protected String name;
     private List<Robot> robotList = new ArrayList<>();
 
+    /**
+     * Khoi tạo constuctor.
+     * @param name là tên
+     */
     public Team(String name) {
         this.name = name;
     }
@@ -33,6 +37,11 @@ public class Team {
         return robotList;
     }
 
+    /**
+     * So sanh Team dua theo ten.
+     * @param obj là object dc so sanh
+     * @return giong nhau hay khong
+     */
     @Override
     public boolean equals(Object obj) {
         if (obj instanceof Team) {
