@@ -3,7 +3,7 @@ public class NurseRobot extends Robot implements MedicalReboot {
         super(name);
     }
 
-    public void care() {
-        System.out.println(super.getName() + " is assisting with medical care.");
+    public String DoStuff() {
+        return "NurseRobot is providing medical care.";
     }
 }
