@@ -37,4 +37,9 @@ public class Team {
         }
         return false;
     }
+
+    public void displayWelcome() {
+        System.out.println("***************WELCOME TO***************");
+        System.out.println("****************" + name + "*****************");
+    }
 }
