@@ -1,4 +1,4 @@
-public class Robot {
+public abstract class Robot {
     private String name;
 
     public Robot(String name) {
@@ -12,11 +12,8 @@ public class Robot {
     public void setName(String name) {
         this.name = name;
     }
-
+    
     public boolean equals(Robot r) {
-        if(this.name.equals(r.getName())) {
-            return true;
-        }
-        return false;
+        return this.name.equals(r.getName());
     }
 }
